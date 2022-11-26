@@ -26,3 +26,11 @@ Some of the commands available are:
 <li>Updating attributes of an object</li>
 <li>Destroying an object</li>
 <ul>
+<h1>How to start it</h1>
+<p>These instructions will get you a copy of the project up and running on your local machine (Linux distro) for development and testing purposes.</p>
+
+<h1>Installing</h1>
+<p>You will need to clone the repository of the project from Github. This will contain the simple shell program and all of its dependencies.</p>
+
+git clone https://github.com/avispro20/AirBnB_clone.git
+<p>After cloning the repository you will have a folder called AirBnB_clone. In here there will be several files that allow the program to work.</p>
