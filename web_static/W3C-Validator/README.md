@@ -17,7 +17,7 @@ Simple file:
 <pre>./w3c_validator.py index.html</pre>
 Multiple files:
 
-<pre>./w3c_validator.py index.html header.html styles/common.css<pre>
+<pre>./w3c_validator.py index.html header.html styles/common.css</pre>
 All errors are printed in STDERR; Exit status = # of errors (0 on success)
 
 <h4>References</h4>
