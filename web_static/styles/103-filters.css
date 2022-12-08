@@ -1,0 +1,160 @@
+.filters {
+    background: #fff;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.filters button {
+    font-size: 18px;
+    background-color: #ff5a5f;
+    color: #fff;
+    height: 48px;
+    width: 20%;
+    border-radius: 4px;
+    float: right;
+    margin: 12px 30px;
+    border: none;
+}
+
+.filters button:hover {
+    opacity: 90%;
+}
+
+.filters .locations,
+.filters .amenities {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    width: 25%;
+}
+
+.filters .locations {
+    border-right: 1px solid #ddd;
+}
+
+.filters h3,
+.filters h4,
+.filters h2 {
+    box-sizing: border-box;
+}
+
+.filters h3 {
+    font-weight: 600;
+    padding: 0 0 0 30px;
+    margin-bottom: 0%;
+}
+
+.filters h4 {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 0 0 30px;
+    margin-top: 0%;
+}
+
+/* Popover styles */
+div .popover {
+    display: none;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+}
+
+div .popover ul {
+    list-style: none;
+}
+
+.filters .locations:hover .popover,
+.filters .amenities:hover .popover {
+    display: block;
+}
+
+/* Location style */
+.filters .locations ul {
+    margin-top: 0px;
+}
+
+.filters .locations li {
+    margin-left: 0.6em;
+}
+
+/* Header 2 style */
+.popover h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px auto 0 30px;
+}
+
+/* Amenities li's style*/
+.filters .amenities li {
+    margin: 0px auto 0px 10px;
+}
+
+.filters .amenities li:first-child {
+    margin-top: 12px;
+}
+
+.filters .amenities li:last-child {
+    margin-bottom: 16px;
+}
+
+.popover {
+    margin: 0%;
+}
+
+
+/* Adjusting to screen with width lt 1000px but gt 720px */
+@media only screen and (max-width: 1000px) {
+    .filters {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+
+/* Adjusting to screen with width 720px and less */
+@media only screen and (max-width: 720px) {
+    .filters {
+        height: 210px;
+        margin: auto 5px;
+    }
+
+    .filters button {
+        background: #ff5a5f;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        float: left;
+        font-size: 18px;
+        height: 48px;
+        margin: 12px 30px;
+        min-width: 150px;
+        width: 20%;
+    }
+
+    .filters .locations,
+    .filters .amenities {
+        height: 70px;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .filters .locations:hover .popover,
+    .filters .amenities:hover .popover {
+        margin-left: auto;
+        position: relative;
+        width: 50%;
+        z-index: 1;
+    }
+
+    .filters .amenities:hover {
+        border-top: 1px solid #ddd;
+    }
+}
